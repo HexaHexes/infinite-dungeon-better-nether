@@ -39,3 +39,11 @@ side = "BOTH"
 # Add your mod's dependencies below. Use type = "optional" for anything the mod
 # works without, and gate the code that touches it (mixins, registrations) so it
 # no-ops when the dependency is absent.
+
+[[dependencies.${mod_id}]]
+modId = "betternether"
+type = "required"
+versionRange = "[21.0.30,)"
+ordering = "AFTER"
+side = "BOTH"
+reason = "This dungeon dimension is the Better Nether blueprint: its biome gate and themed palette are BetterNether's own (the New Dawn continuation keeps the betternether id and the betternether biome namespace, so the datapack applies unchanged)."

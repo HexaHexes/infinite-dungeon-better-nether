@@ -18,7 +18,8 @@ with its own salt, and the ported content pack (types, biome mappings, staged lo
 treasure, theming).
 
 **Dependencies**
-- Required today: Minecraft, NeoForge (scaffold state).
+- Required: Minecraft, NeoForge, **BetterNether** `betternether [21.0.30,)` (org ruling: target mod is a hard dependency; via the New Dawn NeoForge continuation - Modrinth fxX3RlL5 file mVN7Jc4v - which hard-requires bclib [21.0.14,), wover [21.0.14,), wunderlib [21.0.9,).
+- Dev classpath: `maven.modrinth:betternether-neoforge:21.0.30` + `bclib-neoforge:21.0.28` + `worldweaver-neoforge:21.0.30` + `wunderlib-neoforge:21.0.11` through the devRuntime bucket in build.gradle (the closed transitive set FML needs) - never packaged, POM-clean.
 - Planned for first implementation: `infinite-dungeon-api` (dimension profiles),
   Dungeon Crawl (content contract, CF 324973 file 7887320 / Modrinth q0rRg4lH),
   and the profile-driven core of HexaHexes/infinite-dungeon (issues #162, #163).
