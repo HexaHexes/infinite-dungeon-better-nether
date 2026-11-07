@@ -68,6 +68,7 @@ neoForge {
 // (gradle.properties) rather than duplicated in the toml.
 def generateModMetadata = tasks.register('generateModMetadata', ProcessResources) {
     def replaceProperties = [
+            api_version            : api_version,
             minecraft_version      : minecraft_version,
             minecraft_version_range: minecraft_version_range,
             neo_version            : neo_version,
